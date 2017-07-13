@@ -108,23 +108,23 @@ colo molokai
 let g:molokai_original = 1
 "}}}
 "Shougo/neocomplcache{{{
-Bundle 'Shougo/neocomplcache'
-set completeopt-=preview
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_enable_underbar_completion = 1
-let g:neocomplcache_caching_limit_file_size = 50000000
-let g:neocomplcache_min_syntax_length = 2 
-"<CR>: close popup and save indent.
-inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
-"<TAB>: completion. NO USE with snipmate
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-"<C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-Y>  neocomplcache#close_popup()
-inoremap <expr><C-e>  neocomplcache#cancel_popup()
+" Bundle 'Shougo/neocomplcache'
+" set completeopt-=preview
+" let g:neocomplcache_enable_at_startup = 1
+" let g:neocomplcache_enable_smart_case = 1
+" let g:neocomplcache_enable_camel_case_completion = 1
+" let g:neocomplcache_enable_underbar_completion = 1
+" let g:neocomplcache_caching_limit_file_size = 50000000
+" let g:neocomplcache_min_syntax_length = 2 
+" "<CR>: close popup and save indent.
+" inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
+" "<TAB>: completion. NO USE with snipmate
+" inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" "<C-h>, <BS>: close popup and delete backword char.
+" inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+" inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+" inoremap <expr><C-Y>  neocomplcache#close_popup()
+" inoremap <expr><C-e>  neocomplcache#cancel_popup()
 "let g:neocomplcache_enable_auto_select = 1
 "}}}
 "scrooloose/nerdtree{{{
