@@ -99,7 +99,7 @@ noremap <F3> :ConqueTerm bash
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 1
-let g:ctrlp_user_command = "find %s -type f \! \\( -path '*/.svn/*' -or -path '*/.git/*' -or -name '*.rrd' -or -name '*.pyc' -or -name '*.pyo' \\)"
+let g:ctrlp_user_command = "find %s -type f \! \\( -path '*/.svn/*' -or -path '*/.git/*' -or -path '*/node_modules/*' -or -name '*.rrd' -or -name '*.pyc' -or -name '*.pyo' \\)"
 "}}}
 "molokai{{{
 Bundle 'molokai'
