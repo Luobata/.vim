@@ -159,6 +159,14 @@ noremap <leader>g :Gstatus<cr><c-w>_
 "Lokaltog/vim-easymotion"{{{
 Bundle 'Lokaltog/vim-easymotion'
 let g:EasyMotion_leader_key = ';'
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
+"map <Leader><leader>h <Plug>(easymotion-linebackward)
+"map <Leader><Leader>j <Plug>(easymotion-j)
+"map <Leader><Leader>k <Plug>(easymotion-k)
+"map <Leader><leader>l <Plug>(easymotion-lineforward)
+" 重复上一次操作, 类似repeat插件, 很强大
+map <Leader><leader>. <Plug>(easymotion-repeat)
 "}}}
 "klen/python-mode"{{{
 Bundle 'klen/python-mode'
@@ -524,10 +532,14 @@ nmap <F8> :TagbarToggle<CR>
 
 map gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " 触发不全快捷键
-let g:ycm_key_list_select_completion = ['<TAB>', '<c-n>', '<Down>'] 
-let g:ycm_key_list_previous_completion = ['<S-TAB>', '<c-p>', '<Up>'] 
-let g:ycm_auto_trigger = 1 
-" 最小自动触发补全的字符大小设置为 3 
-let g:ycm_min_num_of_chars_for_completion = 3 
-" YCM的previw窗口比较恼人，还是关闭比较好 
-set completeopt-=preview 
+let g:ycm_key_list_select_completion = ['<TAB>', '<c-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<S-TAB>', '<c-p>', '<Up>']
+let g:ycm_auto_trigger = 1
+" 最小自动触发补全的字符大小设置为 3
+let g:ycm_min_num_of_chars_for_completion = 3
+" YCM的previw窗口比较恼人，还是关闭比较好
+set completeopt-=preview
+
+" 高亮行尾多余空格
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
