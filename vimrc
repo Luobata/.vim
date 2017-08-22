@@ -86,6 +86,7 @@ Bundle 'posva/vim-vue'
 Bundle 'majutsushi/tagbar'
 Bundle 'ternjs/tern_for_vim'
 Bundle 'digitaltoad/vim-pug'
+Bundle 'vim-scripts/vim-stylus'
 
 
 "PDV--phpDocumentor-for-Vim{{{
