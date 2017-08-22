@@ -42,7 +42,7 @@ let g:vundle_default_git_proto = 'git'
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 "}}}
 " Bundles {{{
@@ -85,6 +85,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'posva/vim-vue'
 Bundle 'majutsushi/tagbar'
 Bundle 'ternjs/tern_for_vim'
+Bundle 'digitaltoad/vim-pug'
 
 
 "PDV--phpDocumentor-for-Vim{{{
