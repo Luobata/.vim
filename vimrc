@@ -87,6 +87,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'ternjs/tern_for_vim'
 Bundle 'digitaltoad/vim-pug'
 Bundle 'vim-scripts/vim-stylus'
+Bundle 'jelera/vim-javascript-syntax'
 
 
 "PDV--phpDocumentor-for-Vim{{{
@@ -493,7 +494,7 @@ autocmd FileType C setlocal makeprg=gcc\ -o\ a\ % \&\& ./a
 " => JavaScript section
 """""""""""""""""""""""""""""""
 au FileType javascript inoremap <buffer> {<cr> {<esc>o}<esc>O
-au FileType javascript call JavaScriptFold()
+" au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
 
