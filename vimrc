@@ -87,6 +87,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'ternjs/tern_for_vim'
 Bundle 'digitaltoad/vim-pug'
 Bundle 'vim-scripts/vim-stylus'
+"Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 
 
@@ -118,7 +119,7 @@ let g:molokai_original = 1
 " let g:neocomplcache_enable_camel_case_completion = 1
 " let g:neocomplcache_enable_underbar_completion = 1
 " let g:neocomplcache_caching_limit_file_size = 50000000
-" let g:neocomplcache_min_syntax_length = 2 
+" let g:neocomplcache_min_syntax_length = 2
 " "<CR>: close popup and save indent.
 " inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
 " "<TAB>: completion. NO USE with snipmate
@@ -494,7 +495,7 @@ autocmd FileType C setlocal makeprg=gcc\ -o\ a\ % \&\& ./a
 " => JavaScript section
 """""""""""""""""""""""""""""""
 au FileType javascript inoremap <buffer> {<cr> {<esc>o}<esc>O
-" au FileType javascript call JavaScriptFold()
+" au FileType javascript call JavaScriptFold2()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
 
@@ -510,6 +511,12 @@ function! JavaScriptFold()
 		return substitute(getline(v:foldstart), '{.*', '{...}', '')
 	endfunction
 	setl foldtext=FoldText()
+endfunction
+
+function! JavaScriptFold2()
+	setl foldmethod=syntax
+	setl foldlevelstart=1
+	syntax region foldBraces start=/{/ end=/}/ transparent fold keepend extend
 endfunction
 
 """"""""""""""""""""""""""""""
