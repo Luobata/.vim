@@ -89,6 +89,8 @@ Bundle 'digitaltoad/vim-pug'
 Bundle 'vim-scripts/vim-stylus'
 "Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
 
 
 "PDV--phpDocumentor-for-Vim{{{
@@ -553,3 +555,5 @@ set completeopt-=preview
 " 高亮行尾多余空格
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
+
+let g:vim_markdown_fenced_languages = ['js=javascript']
