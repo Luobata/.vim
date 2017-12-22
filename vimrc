@@ -91,6 +91,7 @@ Bundle 'vim-scripts/vim-stylus'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'leafgarland/typescript-vim'
 
 
 "PDV--phpDocumentor-for-Vim{{{
