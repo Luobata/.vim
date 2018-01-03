@@ -92,6 +92,7 @@ Bundle 'jelera/vim-javascript-syntax'
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'leafgarland/typescript-vim'
+Bundle 'prettier/vim-prettier'
 
 
 "PDV--phpDocumentor-for-Vim{{{
@@ -558,3 +559,6 @@ highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 
 let g:vim_markdown_fenced_languages = ['js=javascript']
+
+" Bundle prettier/vim-prettier
+let g:prettier#config#tab_width = 4
