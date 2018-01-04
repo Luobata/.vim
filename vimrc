@@ -564,3 +564,6 @@ let g:vim_markdown_fenced_languages = ['js=javascript']
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md PrettierAsync
 let g:prettier#config#tab_width = 4
+
+" Bundle 'posva/vim-vue'
+autocmd FileType vue syntax sync fromstart
