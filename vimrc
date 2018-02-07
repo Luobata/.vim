@@ -566,6 +566,10 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 let g:prettier#config#tab_width = 4
 let g:prettier#config#trailing_comma = 'all'
 let g:prettier#config#bracket_spacing = 'true'
+let g:prettier#config#parser = 'babylon'
+
+" autocmd FileType javascript set formatprg=prettier-eslint\ --stdin
+" autocmd BufWritePre *.js :normal gggqG
 
 " Bundle 'posva/vim-vue'
 autocmd FileType vue syntax sync fromstart
